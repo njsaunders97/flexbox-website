@@ -1,0 +1,288 @@
+/* 
+
+COLOUR SCHEME
+#E43D12 - red
+#D6536D - light purple
+#FFA2B6 - pink 
+#EFB11D - yolk yellow
+#EBE9E1 - eggshell
+
+*/
+
+html, body {
+  font-family: Lato, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+
+main {
+  position: relative;
+}
+
+.button {
+  border-radius: 6px;
+  background-color: #EBE9E1; 
+  color: #D6536D;
+}
+
+.button:hover {
+  background-color: #e0ddd4;
+  transition: all 0.2s ease-in;
+  cursor: pointer;
+  color: #d52246;
+}
+
+/* HEADER */
+
+header {
+  position: fixed;
+  width: 100%;
+  background-color: #EBE9E1;
+  z-index: 100;
+  display: block;
+  top: 0; 
+}
+
+header .content {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  margin: 0 1.875rem;
+}
+
+header .logo {
+  flex: 1;
+  text-decoration: none;
+  color: #E43D12;
+  font-family: Sedan, serif;
+  font-size: 1.5rem;
+}
+
+header nav ul {
+  display: flex;
+  list-style: none;
+}
+
+header nav li {
+  padding: 0 0.6rem;
+}
+
+header nav a {
+  text-decoration: none;
+  color: #E43D12;
+}
+
+header nav a:hover {
+  opacity: 0.6;
+  transition: opacity 0.18s ease-in;
+}
+
+header .mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 760px) {
+  header .desktop {
+    display: none;
+  }
+
+  header .mobile {
+    display: block;
+    width: 100%;
+  }
+
+  header .mobile ul {
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+  }
+
+  header .mobile li {
+    padding: 0;
+  }
+
+  header img {
+    width: 1.6rem;
+    height: auto;
+  }
+}
+
+/* MAIN --> SIGNUPS */
+
+.signup-section {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: 43.5rem;
+  background-image: url(../images/egg-background.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.signup-cta {
+  position: relative;
+  top: 10.6875rem;
+  left: 10%;
+  padding: 2rem 4rem;
+  background-color: #EFB11D;
+  border-radius: 6px;
+  text-align: center;
+}
+
+.signup-cta h1 {
+  font-family: Damion; 
+  margin-top: 0rem;
+  margin-bottom: 0.5rem;
+}
+
+.signup-cta h2 {
+  font-family: Sedan, serif;
+  opacity: 0.9;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  margin-top: 0rem;
+}
+
+.signup-cta p {
+  font-weight: 400;
+  font-size: 1.15rem;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.cta-completion {
+  text-align: center;
+}
+
+.signup-cta .button {
+  padding: 1rem 1rem;
+}
+
+/* MAIN --> EGGS */
+
+.products {
+  min-height: 31.25rem;
+  margin: auto;
+  padding-top: 1.5rem;
+  background-color: #EFB11D;
+  padding-bottom: 3rem;
+}
+
+.products .content {
+  text-align: center;
+  padding-top: 0.5rem;
+}
+
+.products .content h2 {
+  font-weight: 300;
+  margin-bottom: 0;
+  font-family: Lato, sans-serif;
+}
+
+.products .content h4 {
+  margin-top: 0.75rem;
+  font-weight: 400;
+  font-size: 1.75rem;
+  font-family: Sedan, serif;
+}
+
+.egg-products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.egg-type {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  background-color: #EBE9E1;
+  margin: 1rem;
+  padding: 0.75rem; /* ensures that <span> is positioned underneath the image, despite the .egg-products container not using flex-direction: column */
+}
+
+.egg-type img {
+  margin-left: auto;
+  margin-right: auto;
+  width: 30rem;
+  padding: 10px;
+  height: auto;
+}
+
+.egg-type h3 {
+  min-width: 240px;
+  text-align: center;
+  font-family: Sedan, serif;
+  font-size: 1.65rem;
+  margin: 0;
+  color: #E43D12;
+}
+
+.egg-type span {
+  margin: 0.5rem;
+}
+
+/* MAIN --> THE CLUTCH */
+
+.profiles {
+  background-color: #EBE9E1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 70px;
+  padding-bottom: 4.375rem;
+}
+
+.teammate {
+  padding: 10px; 
+  color: #D6536D;
+  flex-basis: 17.5rem;
+  text-align: center;
+}
+
+.teammate img {
+  margin-left: auto;
+  margin-right: auto;
+  width: 12.5rem;
+  height: auto;
+}
+
+.team h2 {
+  text-align: center;
+  padding: 1rem;
+  font-family: Sedan, serif;
+  font-size: 2rem;
+}
+
+/* FOOTER */
+
+footer {
+  margin: 2rem;
+  text-align: center;
+}
+
+footer .content {
+  display: inline;
+}
+
+footer span {
+  padding: 1rem;
+}
+
+footer span em {
+  font-size: 1.15rem;
+  font-family: Damion, serif;
+  letter-spacing: 0.15rem;
+}
+
+footer h2 {
+  font-family: Sedan, serif;
+}
